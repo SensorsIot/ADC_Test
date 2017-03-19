@@ -22,7 +22,7 @@ void loop() {
   // read normal Arduino value
 
   int in0 = analogRead(A0);
-  float val0 = in0 * 5.0 / 1023.0;
+  float val0 = in0 * 5.0 / 1024.0;
 
   // read correct supply voltage
 
