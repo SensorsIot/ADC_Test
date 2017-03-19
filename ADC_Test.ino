@@ -77,6 +77,6 @@ long readVcc() {
   while (bit_is_set(ADCSRA, ADSC));
   result = ADCL;
   result |= ADCH << 8;
-  result = 1125300L / result; // Calculate Vcc (in mV); 1125300 = 1.1*1023*1000
+  result = 1126400L / result; // Calculate Vcc (in mV); 1125300 = 1.1*1024*1000
   return result;
 }
